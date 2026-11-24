@@ -8,6 +8,10 @@ A bilingual web panel for Xray and related proxy services, adapted from **3x-ui 
 
 > Development candidate v20. Local panel, proxy-traffic, update and recovery tests have been run. This is not a production-security certification or a claim that every deployment mode works on every host. No server is installed or changed by opening this repository.
 
+> Delivery status: the complete source ZIP is available in Releases. The full runtime upload is still pending because the current transfer route cannot carry its 136MB file. Installation commands below document the frozen runtime and are not a claim that it is already downloadable. Browsable source-tree import is also pending.
+>
+> حالة التسليم: أرشيف السورس الكامل متاح في Releases. حزمة التشغيل الكاملة لم ترفع بعد بسبب حد حجم وسيلة النقل الحالية. أوامر التثبيت أدناه توثق الحزمة المجمدة ولا تعني أنها متاحة للتنزيل حاليا. استيراد شجرة السورس ما زال غير مكتمل.
+
 ## العربية
 
 Xpanel لوحة تحكم بواجهة عربية وإنجليزية لإدارة إعدادات البروكسي والعملاء والاشتراكات والإحصاءات. مبنية على 3x-ui مع الحفاظ على ترخيص GPL وحقوق المطورين الأصليين، وإضافات Xpanel موضحة في ملفات المراجعة.
@@ -25,7 +29,7 @@ Xpanel لوحة تحكم بواجهة عربية وإنجليزية لإدارة
 
 الحزمة الجاهزة مخصصة لـ **Linux amd64** وتعتمد على glibc برموز تصل إلى `GLIBC_2.34`. تحتاج Python 3 و`flock` وOpenSSL يدعم Ed25519، وsystemd فقط إذا أردت تثبيت خدمة للنظام.
 
-1. نزّل حزمة التشغيل `xpanel-private-linux-amd64-development-2026-11-24-v20.zip` من قسم Releases. كلمة private في اسم الأرشيف تصف تسمية النسخة المحلية الأصلية، وليست صلاحية وصول المستودع.
+1. بعد اكتمال رفع حزمة التشغيل `xpanel-private-linux-amd64-development-2026-11-24-v20.zip` إلى Releases، نزّلها. الحزمة ليست متاحة هناك حاليا. كلمة private في اسم الأرشيف تصف تسمية النسخة المحلية الأصلية، وليست صلاحية وصول المستودع.
 2. تحقق من SHA256 المبين أدناه، ثم فك الحزمة في مجلد تجهيز خاص بك. لا تشغّل سكربتات تثبيت 3x-ui القديمة الموجودة ضمن السورس باعتبارها مثبت Xpanel.
 3. استخدم حساب خدمة موجودا غير root. أنشئ المجلد الأب بصلاحيات مناسبة، لكن اترك مجلد التثبيت الجديد نفسه للمثبت. نفذ أوامر التثبيت أدناه بحساب الخدمة.
 4. شغّل `current/start-managed.sh` من طرفية تفاعلية لإنشاء أول مدير. اللوحة تبدأ على `127.0.0.1:2053` والاشتراكات معطلة حتى تضبطها. للوصول من جهاز آخر استخدم نفقا آمنا أو إعداد reverse proxy راجعته بنفسك. لا تكشف لوحة الإدارة للإنترنت دون حماية.
@@ -95,7 +99,7 @@ Actual systemd boot/start and root-to-service-user execution remain untested her
 
 ## Source access
 
-The complete source archive is supplied alongside the full runtime in Releases. Browsable source-tree import is pending a supported authenticated bulk git route; this repository must not yet be mistaken for a complete browsable source checkout. The source ZIP contains all2458 reviewed files and notices.
+The complete source archive is available in [the v20 development release](https://github.com/PacketBreaker/xpanel/releases/tag/v20-candidate). The full 136MB runtime upload remains pending because the current transfer route has a 25MiB per-file limit. Browsable source-tree import is pending a supported authenticated bulk git route; this repository must not yet be mistaken for a complete browsable source checkout. The source ZIP contains all2458 reviewed files and notices. GitHub's automatic source snapshots contain repository documentation only at this stage, not the complete Xpanel source.
 
 ## Frozen artifact checksums
 
