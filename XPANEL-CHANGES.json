@@ -1,0 +1,452 @@
+{
+  "upstream_commit": "c621ba9014a6aa21fd7c9ecf45655e44e24ebf13",
+  "changes": [
+    {
+      "path": "XPANEL-LOCAL-INSTALL.md",
+      "kind": "added",
+      "sha256": "8e44e42b02092fa89a39fcb0a3f861196e51edaef21563df5610724dd081537a"
+    },
+    {
+      "path": "XPANEL-CHANNEL-v15.md",
+      "kind": "added",
+      "sha256": "0f9154bc211105e03d2cd0f56491ae77a2dae17654992390660bd24e57d947c4"
+    },
+    {
+      "path": "go.mod",
+      "kind": "modified",
+      "sha256": "a88633df6e2c597238a766278b24f88de63b6cae1efb4562daa3a578b90a3b62"
+    },
+    {
+      "path": "XPANEL-NOTICE.md",
+      "kind": "added",
+      "sha256": "027ba564c3b3527d3823936a9a0e93a356782b9cd21a01232a9b4958a713e577"
+    },
+    {
+      "path": "XPANEL-MANAGED-UPDATES-v16.md",
+      "kind": "added",
+      "sha256": "f601567a3d6ab7fd8ac2887d695307f1f35163d788d2806acdc6219f1416f809"
+    },
+    {
+      "path": "XPANEL-FAILURE-STATE-v6.md",
+      "kind": "added",
+      "sha256": "5422a91dddbc32174c4e401c3e7a98e0808cb5cef9a616a958ae8c9d26317a67"
+    },
+    {
+      "path": "XPANEL-ACCOUNTING-DEPENDENCIES-v11.md",
+      "kind": "added",
+      "sha256": "be9c7714059cb87e7531e03b7e4fe4135f22889173bd5d2e61a58dc718e5d6bd"
+    },
+    {
+      "path": "XPANEL-OPERATOR-RECOVERY.md",
+      "kind": "added",
+      "sha256": "ebaf78db4e2ee9c7e135595aebf378d34c426e3550ab273cfbc987a258c70735"
+    },
+    {
+      "path": "install.sh",
+      "kind": "modified",
+      "sha256": "66815c72153b918a4680d74f8261f953ccb823acc68b349890a6d59f54aa5b87"
+    },
+    {
+      "path": "update.sh",
+      "kind": "modified",
+      "sha256": "66815c72153b918a4680d74f8261f953ccb823acc68b349890a6d59f54aa5b87"
+    },
+    {
+      "path": "XPANEL-REVIEW.md",
+      "kind": "added",
+      "sha256": "40421268e12265dda25a733f336ff49a96fce9cd250fbd814d64f2b54d8a0dab"
+    },
+    {
+      "path": "main.go",
+      "kind": "modified",
+      "sha256": "b913c0859441f9bd0a719b88ec60bc3d5e2a44aab220ad1c9376c86b3b69e7df"
+    },
+    {
+      "path": "XPANEL-OWNER-SCALE-v12.md",
+      "kind": "added",
+      "sha256": "f4f81221d91479abe5ca7092a88ff1c5ade407a8240339f5b0539251bfc97ccd"
+    },
+    {
+      "path": "XPANEL-RESTORE-CORRECTION-v5.md",
+      "kind": "added",
+      "sha256": "3dadcefa048a93d14967e58100f8e0380390a35f181a285b75e98757c54efd10"
+    },
+    {
+      "path": "go.sum",
+      "kind": "modified",
+      "sha256": "125431219e8149469ad6773e58c91d71c302ad7113850f09340daa96e4e06b68"
+    },
+    {
+      "path": "x-ui.sh",
+      "kind": "modified",
+      "sha256": "66815c72153b918a4680d74f8261f953ccb823acc68b349890a6d59f54aa5b87"
+    },
+    {
+      "path": "XPANEL-MIGRATION-ERRORS-v7.md",
+      "kind": "added",
+      "sha256": "713471de2953d4123f94a95fa9ce696a53107a917609565edf8f46e76b7f292b"
+    },
+    {
+      "path": "tools/xpanel-service.py",
+      "kind": "added",
+      "sha256": "05bb1459e934876c9a7f67a33935381014c84965ade9e6d546571ec150887de1"
+    },
+    {
+      "path": "tools/xpanel-channel.py",
+      "kind": "added",
+      "sha256": "09f97739afe8825568001baa52a52ddf2ed9b9a4e355e28e96bf8bdd669b8d17"
+    },
+    {
+      "path": "tools/xpanel-local.py",
+      "kind": "added",
+      "sha256": "4f0ff28937bef17b41bb8093ff0e7587ddd1182032c18752cb8dd63c6f385eb1"
+    },
+    {
+      "path": "tools/xpanel-supervisor.py",
+      "kind": "added",
+      "sha256": "a42295972c378f0b6b75d027526473ea5e3a3e1b87b2f978839e06f3c79b173f"
+    },
+    {
+      "path": "tools/start-managed.sh",
+      "kind": "added",
+      "sha256": "cb145a9c6b59b1f00fcf08cfdc39fd29cab3216557a951c08dacb1f0384e7e1b"
+    },
+    {
+      "path": "packaging/README.md",
+      "kind": "added",
+      "sha256": "c0a98be70e7f80769990d776ab37713d7928f09acc6c68c04ce7c26bcd1bb1bd"
+    },
+    {
+      "path": "packaging/start-local.sh",
+      "kind": "added",
+      "sha256": "bdb1685cbba1be410353b74f61cbca6768d3825db9b479cf23cef390f80b65ba"
+    },
+    {
+      "path": "frontend/package.json",
+      "kind": "modified",
+      "sha256": "eeb6c8a5de083c7dda944230a6520ae1bbf6a1e92d0e036455c04e5d3e88716a"
+    },
+    {
+      "path": "frontend/login.html",
+      "kind": "modified",
+      "sha256": "f8b20a99444a7fe943105415e326fc5a8e59e01786fdd78236f23e194d90cfb1"
+    },
+    {
+      "path": "frontend/index.html",
+      "kind": "modified",
+      "sha256": "faf2998d3b9b02a1a3ed75e74d3007f6089246dc8734bb35d90bc85ab4d6b480"
+    },
+    {
+      "path": "frontend/package-lock.json",
+      "kind": "modified",
+      "sha256": "5a5ee80dcdc29e1dbc4311dd20227fe04aed59c7327f6e4a183a4a90e29af1b2"
+    },
+    {
+      "path": "frontend/src/components/brand/XpanelIdentity.tsx",
+      "kind": "added",
+      "sha256": "600d995d33b5d92c411ad55085217a39ca3ebce1082ac494fb52607149d88df1"
+    },
+    {
+      "path": "frontend/src/components/brand/XpanelIdentity.css",
+      "kind": "added",
+      "sha256": "6509519c6b72dd64e473c15f1e7eb605345bfaf908489d0f2150d262ba05f552"
+    },
+    {
+      "path": "frontend/src/components/clients/ClientTrafficCell.tsx",
+      "kind": "modified",
+      "sha256": "506fc577ff3ac9770dd91769df91cb14722e95f924603c821c40b135d8f2cfbc"
+    },
+    {
+      "path": "frontend/src/pages/clients/ClientInfoModal.tsx",
+      "kind": "modified",
+      "sha256": "d8c6fc9886f688c3732ce4713d53af505bdf8324ddcc21bb82f0e8a1d7648a04"
+    },
+    {
+      "path": "frontend/src/pages/clients/ClientsPage.tsx",
+      "kind": "modified",
+      "sha256": "3e2c3b251e025815cb2853af074fdc7d56d717018263e069ee6e8045e5d6582f"
+    },
+    {
+      "path": "frontend/src/pages/login/LoginPage.tsx",
+      "kind": "modified",
+      "sha256": "f55690b1e42916fe3aaebca6814d007076ebbacb84d4f804853c8d89e2e39223"
+    },
+    {
+      "path": "frontend/src/pages/index/IndexPage.css",
+      "kind": "modified",
+      "sha256": "cd8738291af22f6e16ae570e74df28a7ceb52aacd06dcda8b1a9d6d667270401"
+    },
+    {
+      "path": "frontend/src/pages/index/VitalTile.tsx",
+      "kind": "modified",
+      "sha256": "067a721b66a009b5367966374b41d7ba2336fd7ea8450a4da679e496dc8187c8"
+    },
+    {
+      "path": "frontend/src/pages/index/PanelUpdateModal.tsx",
+      "kind": "modified",
+      "sha256": "9cf03cda9ccde977209a148cf01b41839fa344c83035eddb430318df39a4c66f"
+    },
+    {
+      "path": "frontend/src/pages/index/SystemStrip.tsx",
+      "kind": "modified",
+      "sha256": "83b568ec834063db24f6cb8f7882c17828feb62e38ff18c004dda66b21e285ea"
+    },
+    {
+      "path": "frontend/src/pages/index/ThroughputCard.tsx",
+      "kind": "modified",
+      "sha256": "e2d307388eb1403f0e4b3d7d65c9fbb26c2080fdcc72ae56ac2368fb12c9a835"
+    },
+    {
+      "path": "frontend/src/test/antd-locale.test.tsx",
+      "kind": "modified",
+      "sha256": "9604e34c4e32e6fe9c80c2f9dfecb3da7245cfdcbd306833218c8060d65d8ce3"
+    },
+    {
+      "path": "frontend/src/test/xpanel-brand.test.tsx",
+      "kind": "added",
+      "sha256": "d9db897e53abe02f070fa3fc4cef070772bd5b752db83f8c9c962917ea76ae80"
+    },
+    {
+      "path": "frontend/src/i18n/react.ts",
+      "kind": "modified",
+      "sha256": "6347e8f870502693c2865ac986f2631d05e999b71c7d04fc4d9bf82c3b76ed50"
+    },
+    {
+      "path": "frontend/src/i18n/AntdRootConfig.tsx",
+      "kind": "modified",
+      "sha256": "f447f22137e1866d8f4849502d717d4f322dc7248baf8533c74c23ca93b72881"
+    },
+    {
+      "path": "frontend/src/layouts/AppSidebar.tsx",
+      "kind": "modified",
+      "sha256": "922da0d70d387467433dd89aabec465bc443856dadaa8a7762483528ca948e30"
+    },
+    {
+      "path": "frontend/src/layouts/PanelLayout.tsx",
+      "kind": "modified",
+      "sha256": "65bb87410d5bcb0d8ca701527cbf450e934dba45fe28ecf222a69554701ffce7"
+    },
+    {
+      "path": "frontend/src/hooks/usePageTitle.ts",
+      "kind": "modified",
+      "sha256": "6f68464267d562d310e663168292d31845de1cee7ba9c1334e8fe373234ff4a3"
+    },
+    {
+      "path": "frontend/public/manifest.webmanifest",
+      "kind": "modified",
+      "sha256": "58b68ea088d0db24fa2c7f25bb24b4fd749bb25ff7469dd7c11bd7e71fa45324"
+    },
+    {
+      "path": "frontend/public/icons/3x-ui-16.png",
+      "kind": "modified",
+      "sha256": "c107c37f0fd55a4d2d46fa20e3f71ab7536e96bfac02ee08f1678f52b11317a2"
+    },
+    {
+      "path": "frontend/public/icons/3x-ui-192.png",
+      "kind": "modified",
+      "sha256": "c1ca16cedf9dcaad58c3c5d092f00efe623a8050940607311f01b712ae456957"
+    },
+    {
+      "path": "frontend/public/icons/3x-ui-32.png",
+      "kind": "modified",
+      "sha256": "147da76ea9ad89c5383f5ca7ebf023962fe70348b7372a358d983d75e78e656e"
+    },
+    {
+      "path": "frontend/public/icons/3x-ui-64.png",
+      "kind": "modified",
+      "sha256": "e0bbb7cd6cef0f3c22b090f30d5cd3c64097b8bc6e8840dfefaac2c40c89da4c"
+    },
+    {
+      "path": "frontend/public/icons/3x-ui-24.png",
+      "kind": "modified",
+      "sha256": "decbb04025d4eb5e7ee70a40cec2b180797aae67be4128379665f9f71ef51830"
+    },
+    {
+      "path": "frontend/public/icons/3x-ui-512.png",
+      "kind": "modified",
+      "sha256": "770708c706372c18cb76f81ac74bb76496023ace465b97a5a7d146f8593f6395"
+    },
+    {
+      "path": "internal/xpanelsetup/admin.go",
+      "kind": "added",
+      "sha256": "ba58ae4799b652d46c18f5f1cb253ec811549c55883413f2b543578db4f7c439"
+    },
+    {
+      "path": "internal/xpanelsetup/admin_test.go",
+      "kind": "added",
+      "sha256": "d8a19615ca04a10c071b797bbd1c374453fb39077551b7932704b2f1d7c809c5"
+    },
+    {
+      "path": "internal/web/xpanel_visual_local_test.go",
+      "kind": "added",
+      "sha256": "1f8486738a78018470b0aa82294589b610ebeaec16610d1a32f89cd4746eaa56"
+    },
+    {
+      "path": "internal/web/service/client_link.go",
+      "kind": "modified",
+      "sha256": "723cecfb7b8fd94816d76d2ca9660a51e925b8a14ec687a2cf4875aba55c50d2"
+    },
+    {
+      "path": "internal/web/service/inbound.go",
+      "kind": "modified",
+      "sha256": "cddf51c67d630c5997c6b07af21c6195fb8b98365b49bc34589734792eb4b1b7"
+    },
+    {
+      "path": "internal/web/service/inbound_flow_restore.go",
+      "kind": "modified",
+      "sha256": "d2c6bc19de34a16b23daaf6085ea9e48ef15f711de3b29e692a4722221fcbdf4"
+    },
+    {
+      "path": "internal/web/service/inbound_migration.go",
+      "kind": "modified",
+      "sha256": "311d6755e6174f99c3383d8f6d632390faaddfd460cb30a49273431e9c6dd588"
+    },
+    {
+      "path": "internal/web/service/inbound_migration_test.go",
+      "kind": "modified",
+      "sha256": "58e17ed9aa7eb105caf29438a1a93400618a7ce3958d0197d4f7113e416d8881"
+    },
+    {
+      "path": "internal/web/service/server.go",
+      "kind": "modified",
+      "sha256": "a4e3f543fd964389b91c70687b99137f717f6a27c79c9d8b7f3a80523f204899"
+    },
+    {
+      "path": "internal/web/service/xpanel_accounting_owner_test.go",
+      "kind": "added",
+      "sha256": "b830bcfa135fc45b90559b9739af590286badfb743e220d06931644e78d483e8"
+    },
+    {
+      "path": "internal/web/service/xpanel_empty_migration_test.go",
+      "kind": "added",
+      "sha256": "940af3f76fcce2257c62fd8a1670199f6bf4c14d61635e37d0479081c8368524"
+    },
+    {
+      "path": "internal/web/service/xpanel_migration_failures_test.go",
+      "kind": "added",
+      "sha256": "87cf6b09ba4bbe11b8a245e3bd90d9e72113ee2e8d1bea1d04b8c81bb76ce4da"
+    },
+    {
+      "path": "internal/web/service/xpanel_owner_scale_test.go",
+      "kind": "added",
+      "sha256": "a62641fd26c516eb4f47fcd8d5480fcfcb95ef3bead31aba4ecd486a633a8ea3"
+    },
+    {
+      "path": "internal/web/service/panel/xpanel_guard_test.go",
+      "kind": "added",
+      "sha256": "40a29a970f175bc6f846501d4cde5ab3d72afc608aa4cd3ff379757fb37cc16d"
+    },
+    {
+      "path": "internal/web/service/panel/panel.go",
+      "kind": "modified",
+      "sha256": "75aeab89ac172fc93d12cfc9ac7b7262da9cf93adebca16c8d02ec07c0b2eab7"
+    },
+    {
+      "path": "internal/web/service/panel/xpanel_channel_other.go",
+      "kind": "added",
+      "sha256": "b680c9d37f94d263de9bb2a886ce81b752e862360862de0df5d09746292c3c4e"
+    },
+    {
+      "path": "internal/web/service/panel/xpanel_channel.go",
+      "kind": "added",
+      "sha256": "c1c2183d4303f228155f9a54049b345bcc3a4e7a682cdb0b888b8da9dd0ae0f0"
+    },
+    {
+      "path": "internal/web/controller/server.go",
+      "kind": "modified",
+      "sha256": "227ddb1a483375f96faccb51f84ce31117449e970b9877c4f41d622f3fee50a3"
+    },
+    {
+      "path": "internal/web/translation/sk-SK.json",
+      "kind": "modified",
+      "sha256": "3e03089bd6854fde93d333f3f120b1b2455dd486f363554eb516930b4c744700"
+    },
+    {
+      "path": "internal/web/translation/vi-VN.json",
+      "kind": "modified",
+      "sha256": "d1d7b244490926c0d085ade53ade3bed693f66dfb770be26b5aef770bec91145"
+    },
+    {
+      "path": "internal/web/translation/es-ES.json",
+      "kind": "modified",
+      "sha256": "d7902569e9159ef16746cfebfa60ec91a5854d116523de5971054651f8c17fab"
+    },
+    {
+      "path": "internal/web/translation/zh-TW.json",
+      "kind": "modified",
+      "sha256": "8d1a81082ae6bcde515541451007dd3f42ae574d18ba99ea43a3bfa068d9c261"
+    },
+    {
+      "path": "internal/web/translation/uk-UA.json",
+      "kind": "modified",
+      "sha256": "2e3e609ceaee2c405f10cfd9f24e8e687f2c0ec79098872b25f7500f5f6fbe50"
+    },
+    {
+      "path": "internal/web/translation/zh-CN.json",
+      "kind": "modified",
+      "sha256": "460744ebdb4f95d4a875680817e4e4eda063037162835c30512400af66dc8a03"
+    },
+    {
+      "path": "internal/web/translation/ar-EG.json",
+      "kind": "modified",
+      "sha256": "bd271f0c14279690f55507981b02e49250eae45a0bb0963dd0e19ad000ed7f92"
+    },
+    {
+      "path": "internal/web/translation/id-ID.json",
+      "kind": "modified",
+      "sha256": "be71850aa6b83b57d738525ae7e38b02ae1f88e2c62eb67e5ec54e18437d3b9c"
+    },
+    {
+      "path": "internal/web/translation/ru-RU.json",
+      "kind": "modified",
+      "sha256": "35b0c78ac16aa23cfdbfdb1e2d4e236f92aefa2b80f058622a24ac6947690af7"
+    },
+    {
+      "path": "internal/web/translation/ja-JP.json",
+      "kind": "modified",
+      "sha256": "9c69f0d0115e79e83bd70a973839fad86c23f4dabca38534fc1c6d53f9e9288d"
+    },
+    {
+      "path": "internal/web/translation/tr-TR.json",
+      "kind": "modified",
+      "sha256": "27148a39754d74cda9ea33a33a22878b4e5e5432280234e98ece8ac1d89cdf91"
+    },
+    {
+      "path": "internal/web/translation/pt-BR.json",
+      "kind": "modified",
+      "sha256": "2d64a19ffdaa482a4bb403f90880203918f4fb01f7c8c72835f6d5edd158df86"
+    },
+    {
+      "path": "internal/web/translation/en-US.json",
+      "kind": "modified",
+      "sha256": "f1a9a67223bd81bef072f4d8edeee4c431288e991b4e98e93b63b5077823c74e"
+    },
+    {
+      "path": "internal/web/translation/fa-IR.json",
+      "kind": "modified",
+      "sha256": "26e563bdfbd1ff72382dfd4f80345bd7f77123ec45a3d0e047b1a73b0d1d7af5"
+    },
+    {
+      "path": "upstream-scripts/install.sh",
+      "kind": "added",
+      "sha256": "9684bae4f769b2127fcceceb4f200045657381311867529e6ba76c6b58e2825d"
+    },
+    {
+      "path": "upstream-scripts/update.sh",
+      "kind": "added",
+      "sha256": "c3512d562ccc52091ff6480027cdfc4b62e159577dd67ba119867466bca784ac"
+    },
+    {
+      "path": "upstream-scripts/x-ui.sh",
+      "kind": "added",
+      "sha256": "26c229d5fb3b184e81581b4b223b801582ca7cf5908aaedeb8d1c7c70ad4cc25"
+    },
+    {
+      "path": "cmd/xpanel-bootstrap/main.go",
+      "kind": "added",
+      "sha256": "263b5aa3948c240351643091b3c88fb2fbd74ef2450f74c0aadbe3e68c612fae"
+    }
+  ],
+  "deleted": [],
+  "scope": "development review, incomplete external feature and upgrade qualification"
+}

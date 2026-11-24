@@ -1,0 +1,1 @@
+import{a as e}from"./rolldown-runtime-BWaJ3C7D.js";import{j as t}from"./vendor-antd-DUIw12l6.js";import{hi as n}from"./vendor-B_YsYEQs.js";import{t as r}from"./vendor-react-lTuChwRC.js";var i=e(n(),1),a=r();function o({when:e,fallback:n=(0,a.jsx)(t,{}),children:r}){let[o,s]=(0,i.useState)(e);return e&&!o&&s(!0),o?(0,a.jsx)(i.Suspense,{fallback:n,children:r}):null}export{o as t};
