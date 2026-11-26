@@ -8,7 +8,7 @@ A web panel for Xray and related proxy services, adapted from **3x-ui v3.11.0**,
 
 ## What Xpanel includes
 
-- Administration for the upstream panel's clients, inbounds, quotas, expiry, subscriptions, QR codes, statistics, routing and nodes. The interface ships in English (LTR) and Arabic (RTL).
+- Administration for the upstream panel's clients, inbounds, quotas, expiry, subscriptions, QR codes, statistics, routing and nodes. The interface ships in English.
 - Local installation inside a directory owned by the service account, with interactive creation of the first administrator and no default credentials.
 - Browser-based updates through an operator-configured signed Xpanel channel: the panel is stopped, updated and restarted, with a SQLite snapshot for rollback if the new version fails to start.
 - systemd service setup with a non-root account, without granting special network capabilities automatically.

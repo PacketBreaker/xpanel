@@ -8,24 +8,24 @@ describe('AntdRootConfig locale', () => {
     document.cookie = 'lang=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/';
   });
 
-  it.each([
-    ['fa-IR', 'داده‌ای موجود نیست'],
-    ['en-US', 'No data'],
-    ['ar-EG', 'لا توجد بيانات'],
-  ])('renders antd built-in text in the %s panel language', async (locale, emptyText) => {
-    vi.resetModules();
-    document.cookie = `lang=${locale}; path=/`;
-    const { readyI18n } = await import('@/i18n/react');
-    const { AntdRootConfig } = await import('@/i18n/AntdRootConfig');
-    const { Empty } = await import('antd');
+  // The panel ships English only; stored cookies for removed locales fall back to en-US.
+  it.each(['en-US', 'fa-IR', 'ar-EG'])(
+    'renders antd built-in text in English when the stored locale is %s',
+    async (locale) => {
+      vi.resetModules();
+      document.cookie = `lang=${locale}; path=/`;
+      const { readyI18n } = await import('@/i18n/react');
+      const { AntdRootConfig } = await import('@/i18n/AntdRootConfig');
+      const { Empty } = await import('antd');
 
-    await readyI18n('panel');
-    render(
-      <AntdRootConfig>
-        <Empty />
-      </AntdRootConfig>,
-    );
+      await readyI18n('panel');
+      render(
+        <AntdRootConfig>
+          <Empty />
+        </AntdRootConfig>,
+      );
 
-    expect(document.querySelector('.ant-empty-description')?.textContent).toBe(emptyText);
-  });
+      expect(document.querySelector('.ant-empty-description')?.textContent).toBe('No data');
+    },
+  );
 });

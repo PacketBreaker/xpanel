@@ -58,7 +58,8 @@ const heroData = {
 
 const apps = buildSubApps({ subUrl, sId, subTitle });
 const initialPlatform = detectPlatform(navigator.userAgent);
-const RTL_LANGUAGES = new Set(['fa-IR', 'ar-EG']);
+// Xpanel ships English only; no shipped locale is RTL.
+const RTL_LANGUAGES = new Set<string>([]);
 
 export default function SubPage() {
   const { t } = useTranslation();

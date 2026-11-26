@@ -9,18 +9,22 @@ describe('readyI18n page language', () => {
     document.documentElement.lang = 'en';
   });
 
+  // Removed locales (fa-IR, zh-TW) fall back to English in both scopes.
   it.each([
     ['panel', 'lang', 'fa-IR'],
     ['subscription', 'subLang', 'zh-TW'],
-  ] as const)('sets <html lang> to the active %s locale', async (scope, cookie, locale) => {
-    vi.resetModules();
-    document.cookie = `${cookie}=${locale}; path=/`;
-    const { readyI18n } = await import('@/i18n/react');
+  ] as const)(
+    'sets <html lang> to en-US when the %s cookie names %s',
+    async (scope, cookie, locale) => {
+      vi.resetModules();
+      document.cookie = `${cookie}=${locale}; path=/`;
+      const { readyI18n } = await import('@/i18n/react');
 
-    await readyI18n(scope);
+      await readyI18n(scope);
 
-    expect(document.documentElement.lang).toBe(locale);
-  });
+      expect(document.documentElement.lang).toBe('en-US');
+    },
+  );
 
   it('falls back to en-US when the cookie names an unknown locale', async () => {
     vi.resetModules();

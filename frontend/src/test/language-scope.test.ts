@@ -27,9 +27,10 @@ describe('subscription language scope', () => {
     await readyI18n('subscription');
     expect(cookies.get('subLang')).toBe('en-US');
 
+    // Removed locales are coerced to English on write.
     utils.LanguageManager.setLanguage('fa-IR', 'subscription');
     expect(cookies.get('lang')).toBe('en-US');
-    expect(cookies.get('subLang')).toBe('fa-IR');
+    expect(cookies.get('subLang')).toBe('en-US');
     expect(reload).toHaveBeenCalledOnce();
 
     const dateTimeFormat = vi.spyOn(Intl, 'DateTimeFormat').mockImplementation(function (
@@ -41,7 +42,7 @@ describe('subscription language scope', () => {
     expect(dateTimeFormat).toHaveBeenLastCalledWith('fa-IR', expect.any(Object));
   });
 
-  it('maps a Slovak browser to the Slovak panel locale instead of resetting to English', async () => {
+  it('falls back to English when the browser language has no shipped locale', async () => {
     vi.resetModules();
     const utils = await import('@/utils');
     const cookies = new Map<string, string>();
@@ -54,9 +55,9 @@ describe('subscription language scope', () => {
     const reload = vi.fn();
     vi.stubGlobal('window', { navigator: { language: 'sk' }, location: { reload } });
 
-    expect(utils.LanguageManager.getLanguage()).toBe('sk-SK');
-    expect(cookies.get('lang')).toBe('sk-SK');
-    expect(reload).not.toHaveBeenCalled();
+    expect(utils.LanguageManager.getLanguage()).toBe('sk');
+    expect(cookies.get('lang')).toBe('en-US');
+    expect(reload).toHaveBeenCalledOnce();
   });
 
   it('does not resolve the language for empty or invalid dates', async () => {

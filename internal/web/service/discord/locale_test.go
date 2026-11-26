@@ -25,6 +25,8 @@ func TestMain(m *testing.M) {
 }
 
 func TestDiscordMessagesFollowDiscordLang(t *testing.T) {
+	// The panel ships English only; a stored preference for a removed locale
+	// must render the English fallback instead of breaking.
 	const lang = "ru-RU"
 	settingService := setupTestDB(t)
 	_ = settingService.SetDiscordLang(lang)
@@ -87,12 +89,9 @@ func TestDiscordMessagesFollowDiscordLang(t *testing.T) {
 	}
 	for _, tc := range cases {
 		t.Run(tc.key, func(t *testing.T) {
-			want := locale.I18nForLang(lang, tc.key)
-			if want == locale.I18nForLang("en-US", tc.key) {
-				t.Fatalf("%s has no distinct %s translation", tc.key, lang)
-			}
+			want := locale.I18nForLang("en-US", tc.key)
 			if got := tc.render(t); got != want {
-				t.Fatalf("title = %q, want the %s text %q", got, lang, want)
+				t.Fatalf("title = %q, want the en-US fallback %q for stored locale %s", got, want, lang)
 			}
 		})
 	}
